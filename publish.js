@@ -11,7 +11,9 @@ const usage = () => {
 };
 
 const publish = async (bumpStrategy) => {
-  const [packageName] = (await promisify(fs.readdir)('./src/')).filter(f => f !== '.DS_Store');
+  const packageName = (await promisify(fs.readdir)('./'))
+    .find(f => f.endsWith('.fsproj'))
+    .replace('.fsproj', '');
 
   const fsprojPath = `./${packageName}.fsproj`;
 
