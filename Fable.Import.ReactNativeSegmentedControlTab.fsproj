@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Fable binding for react-native-segmented-control-tab</Description>
+    <PackageProjectUrl>https://github.com/iyegoroff/fable-import-react-native-segmented-control-tab</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iyegoroff/fable-import-react-native-segmented-control-tab</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/iyegoroff/fable-import-react-native-segmented-control-tab/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>fsharp;fable;react-native;segmented-control-tab</PackageTags>
+    <Authors>iyegoroff</Authors>
+    <Version>0.0.2</Version>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\Fable.Import.ReactNativeSegmentedControlTab.fs" />
+    <Compile Include="src\Fable.Helpers.ReactNativeSegmentedControlTab.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="*.fsproj; *.fs;" PackagePath="fable\" />
+    <Content Include="src\" PackagePath="fable\src\" />
+  </ItemGroup>
+  <Import Project=".paket\Paket.Restore.targets" />
+</Project>
